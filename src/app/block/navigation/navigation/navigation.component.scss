@@ -53,16 +53,20 @@
 //     }
 //   }
 
-  .overlay{
-    width: 100%;
-    z-index: 2;
+.overlay{
     background-color: #080d15;
     opacity: .7;
 }
-.navbar{
-  position: fixed!important;
-  float: right;
+@media (max-width:720px){
+  .navbar{
+    position: fixed!important;
+    float: right;
+  }
+  .overlay{
+    background-color: none;
+    opacity:unset;
 }
+  }
 .Subscribe{
   background-color: #fff!important;
 }
