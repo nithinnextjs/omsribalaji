@@ -1,0 +1,14 @@
+.testimonial-item button{
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: var(--color-primary);
+    border-radius: 4px;
+    transition: all 0.4s;
+    border: var(--color-primary);
+    padding: 10px;
+}
+.testimonials .testimonial-item {
+min-height: 300px!important;
+   max-height: 300px!important;
+}

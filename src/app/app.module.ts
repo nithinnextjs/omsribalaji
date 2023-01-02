@@ -7,6 +7,12 @@ import { FooterComponent } from './block/footer/footer/footer.component';
 import { HeaderComponent } from './block/header/header/header.component';
 import { NavigationComponent } from './block/navigation/navigation/navigation.component';
 import { LayoutComponent } from './block/app-layout/layout/layout.component';
+import { AboutUsComponent } from './block/about-us/about-us.component';
+import { NewsComponent } from './block/news/news.component';
+import { MediaComponent } from './block/media/media.component';
+import { PhaseComponent } from './block/phase/phase.component';
+import { MapsComponent } from './block/maps/maps.component';
+import { CountComponent } from './block/count/count.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { LayoutComponent } from './block/app-layout/layout/layout.component';
     FooterComponent,
     HeaderComponent,
     NavigationComponent,
-    LayoutComponent
+    LayoutComponent,
+    AboutUsComponent,
+    NewsComponent,
+    MediaComponent,
+    PhaseComponent,
+    MapsComponent,
+    CountComponent
   ],
   imports: [
     BrowserModule,

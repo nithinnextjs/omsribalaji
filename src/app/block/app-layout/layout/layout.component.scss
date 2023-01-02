@@ -8,3 +8,29 @@
 .banner_text{
     color: #fff!important;
 }
+
+.nav-tabs .nav-link {
+    border: none!important;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #feb900!important;
+    background-color: none!important;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #feb900!important;
+    background-color: #f5f6f7!important;
+}
+
+
+/*** Facts ***/
+.facts {
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95));
+}
+
+@media (min-width: 350px) and (max-width: 900px) {
+    .hero {
+      overflow-x: hidden;
+      padding: 0;
+      margin-top: 115px;
+  }
+}
