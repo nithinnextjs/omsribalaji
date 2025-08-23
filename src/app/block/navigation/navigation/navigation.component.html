@@ -1,35 +1,53 @@
- 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <div class="row logo_plaace">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img class="img-fluid" src="../../../../assets/images/image-left.png" alt="leftimage"/><b></b>
-        </a>
-        <h1>Om Sri Balaji<span>.</span></h1>
-      </div>
+<!-- Header Section -->
+<header class="header d-flex align-items-center justify-content-between p-3 flex-wrap sticky-header">
+  <!-- Left Image with Modal -->
+  <div class="header-img-left">
+    <img
+      src="../../../../assets/images/image-left.png"
+      alt="Left"
+      class="img-fluid clickable"
+      data-bs-toggle="modal"
+      data-bs-target="#leftImageModal"
+    />
+  </div>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar overlay">
-        <ul class="px-2">
-          <li class="dropdown active"><a href="#aboutus" class="active"><span>About Us</span></a>
-          </li>
-          <li class="dropdown"><a href="#media"><span>Media/Gallery</span></a>
-          </li>
-          <li class="dropdown"><a href="#services"><span>Services</span></a>
-          </li>
-          <li class="dropdown"><a href="#news"><span>News</span></a>
-          </li>
-          <li class="dropdown"><a href="#cafeteria"><span>Cafeteria</span></a>
-          </li>
-          <li class="dropdown"><a href="#eventsactivities"><span>Events & Activities</span></a>
-          </li>
-          <li class="dropdown"><a href="#contactus"><span>Contact Us</span></a>
-          </li>
-        </ul>
-      </nav><!-- .navbar -->
+  <!-- Center Image with Modal -->
+  <div class="header-img-center text-center">
+    <img
+      src="assets/images/jnana_mandir_logo.png"
+      alt="Center"
+      class="img-fluid clickable"
+      data-bs-toggle="modal"
+      data-bs-target="#centerImageModal"
+    />
+  </div>
 
-    </div>
-  </header><!-- End Header -->
+  <!-- Right Image -->
+  <div class="header-img-right text-end">
+    <img
+      src="../../../../assets/images/image-right.png"
+      alt="Right"
+      class="img-fluid"
+    />
+  </div>
+
+  <!-- Toggle Button -->
+  <button class="mobile-nav-toggle d-lg-none" (click)="toggleNav()">
+    <i class="bi bi-list"></i>
+  </button>
+</header>
+
+<!-- Navigation Bar -->
+<nav [ngClass]="{'navbar-container': true, 'show': navVisible}">
+  <div class="container">
+    <ul class="navbar d-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center">
+      <li><a href="#aboutus">About Us</a></li>
+      <li><a href="#media">Media/Gallery</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#cafeteria">Cafeteria</a></li>
+      <li><a href="#eventsactivities">Events & Activities</a></li>
+      <li><a href="#contactus">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
