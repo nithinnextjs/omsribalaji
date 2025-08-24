@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './block/footer/footer/footer.component';
 import { HeaderComponent } from './block/header/header/header.component';
-import { NavigationComponent } from './block/navigation/navigation/navigation.component';
+import { NavigationComponent } from './block/navigation/navigation.component';
 import { LayoutComponent } from './block/app-layout/layout.component';
 import { AboutUsComponent } from './block/about-us/about-us.component';
 import { NewsComponent } from './block/news/news.component';

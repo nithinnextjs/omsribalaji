@@ -13,7 +13,7 @@ $nav-bg: #f9f9f9;
 
 .header {
   position: relative;
-  background: url('../../../../assets/images/head-bg-top.png') center center / cover no-repeat;
+  background: url('../../../assets/images/head-bg-top.png') center center / cover no-repeat;
     background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -102,7 +102,7 @@ $nav-bg: #f9f9f9;
     display: none;
 
     &.show {
-      display: block;
+      display: block!important;
     }
 
     ul.navbar {

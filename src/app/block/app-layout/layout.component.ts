@@ -11,10 +11,7 @@ export class LayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  //   $('[data-toggle="counter-up"]').c({
-  //     delay: 10,
-  //     time: 2000
-  // });
+
   }
 
 }

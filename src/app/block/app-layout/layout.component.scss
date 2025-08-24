@@ -31,6 +31,29 @@
     .hero {
       overflow-x: hidden;
       padding: 0;
-      margin-top: 115px;
+      margin-top: 0px;
+      max-height: 200px;
+  }
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: center;
+  height: 500px; // default desktop height
+  width: 100%;
+  transition: background-image 0.5s ease-in-out;
+}
+
+// Tablet
+@media (max-width: 991px) {
+  .carousel-item {
+    height: 350px;
+  }
+}
+
+// Mobile
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 250px;
   }
 }
