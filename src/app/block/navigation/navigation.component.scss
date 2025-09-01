@@ -43,7 +43,7 @@ $nav-bg: #f9f9f9;
   .header-img-center,
   .header-img-right {
     text-align: center;
-    width: 30%;
+    width: 20%;
   }
 
   .site-title {
@@ -60,7 +60,8 @@ $nav-bg: #f9f9f9;
   .mobile-nav-toggle {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 15px;
+    z-index: 9999999;
     color: #ff6f00;
     cursor: pointer;
   }
@@ -85,8 +86,8 @@ $nav-bg: #f9f9f9;
       a {
         text-decoration: none;
         color: #f1f1f1;
-        font-weight: 800;
-        font-size: 16px;
+        font-weight: 600;
+        font-size: 14px;
 
         &:hover {
           color: #110800;;
@@ -97,24 +98,34 @@ $nav-bg: #f9f9f9;
 }
 
 // Mobile navigation
+
 @media (max-width: 991px) {
   .navbar-container {
     display: none;
+    position: absolute;
+    top: 100%;  // appears right below header
+    left: 0;
+    width: 100%;
+    background-color: rgb(226, 161, 50);
+    z-index: 998;
 
     &.show {
-      display: block!important;
+      display: block !important;
+      position: absolute;
     }
 
     ul.navbar {
       flex-direction: column;
       align-items: flex-start;
+      padding: 1rem;
     }
   }
 
-   .sticky-header {
-    position: relative; // only navbar sticks on large screens
+  .sticky-header {
+    position: relative; // header not sticky on mobile
   }
 }
+
 
 // White toggle icon
 .mobile-nav-toggle {
@@ -142,7 +153,11 @@ $nav-bg: #f9f9f9;
 
   .navbar-container {
     position: sticky;
-    top: 100px; // adjust based on header height
-    z-index: 998;
+    top: 90px; // adjust based on header height
+     &.show {
+      display: block !important;
+      position: absolute;
+        transform: translateY(0); /* slide into view */
+    }
   }
 }

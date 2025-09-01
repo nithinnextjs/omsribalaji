@@ -32,7 +32,7 @@
       overflow-x: hidden;
       padding: 0;
       margin-top: 0px;
-      max-height: 200px;
+      max-height: 300px;
   }
 }
 
@@ -48,6 +48,10 @@
 @media (max-width: 991px) {
   .carousel-item {
     height: 350px;
+  }
+  .nav-tabs col-1 {
+    flex: 0 0 auto;
+    width: 25.333333%;
   }
 }
 
