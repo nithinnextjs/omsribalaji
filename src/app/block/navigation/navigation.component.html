@@ -1,52 +1,91 @@
 <header class="header d-flex align-items-center justify-content-between p-3 flex-wrap sticky-header">
-  <!-- Left Image with Modal -->
-  <div class="header-img-left">
-    <img
-      src="../../../../assets/images/image-left.png"
-      alt="Left"
-      class="img-fluid clickable"
-      data-bs-toggle="modal"
-      data-bs-target="#leftImageModal"
-    />
-  </div>
+  <div class="container position-relative">
+      <div class="d-flex align-items-center justify-content-between flex-wrap">
 
-  <!-- Center Image with Modal -->
-  <div class="header-img-center text-center">
-    <img
-      src="assets/images/jnana_mandir_logo.png"
-      alt="Center"
-      class="img-fluid clickable"
-      data-bs-toggle="modal"
-      data-bs-target="#centerImageModal"
-    />
-  </div>
+      <!-- Left Image -->
+      <div class="header-img-left d-block">
+        <img
+          src="../../../../assets/images/image-left.png"
+          alt="Left"
+          class="img-fluid clickable"
+          data-bs-toggle="modal"
+          data-bs-target="#leftImageModal"
+        />
+      </div>
 
-  <!-- Right Image -->
-  <div class="header-img-right text-end">
-    <img
-      src="../../../../assets/images/image-right.png"
-      alt="Right"
-      class="img-fluid"
-    />
-  </div>
+      <!-- Center Image -->
+      <div class="header-img-center text-center mx-auto">
+        <img
+          src="assets/images/jnana_mandir_logo.png"
+          alt="Center"
+          class="img-fluid clickable"
+          data-bs-toggle="modal"
+          data-bs-target="#centerImageModal"
+        />
+      </div>
 
-  <!-- Toggle Button -->
-  <button type="button" class="mobile-nav-toggle d-lg-none" (click)="toggleNav()">
-    <i class="bi bi-list"></i>
-  </button>
+      <!-- Right Image: hide on tablet & below -->
+      <div class="header-img-right d-none d-lg-block text-end">
+        <img
+          src="../../../../assets/images/image-right.png"
+          alt="Right"
+          class="img-fluid"
+        />
+      </div>
+
+      <!-- Toggle Button: visible on mobile -->
+      <button
+        type="button"
+        class="mobile-nav-toggle d-lg-none position-absolute end-0 top-0 mt-2 me-3"
+        (click)="toggleNav()"
+        aria-label="Toggle Navigation"
+      >
+        <i class="bi bi-list fs-3"></i>
+      </button>
+
+    </div>
+  </div>
 </header>
 
-<!-- Navigation Bar -->
+<!-- socl media Bar -->
 <nav [ngClass]="{'navbar-container': true, 'show': navVisible}">
   <div class="container">
-    <ul class="navbar d-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center">
-      <li><a href="#aboutus"><i class="bi bi-info-circle"></i> About Us</a></li>
-      <li><a href="#media"><i class="bi bi-images"></i> Media/Gallery</a></li>
-      <li><a href="#services"><i class="bi bi-gear"></i> Services</a></li>
-      <li><a href="#news"><i class="bi bi-newspaper"></i> News</a></li>
-      <li><a href="#cafeteria"><i class="bi bi-cup-straw"></i> Cafeteria</a></li>
-      <li><a href="#eventsactivities"><i class="bi bi-calendar-event"></i> Events & Activities</a></li>
-      <li><a href="#contactus"><i class="bi bi-envelope"></i> Contact Us</a></li>
-    </ul>
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+      
+      <!-- Navigation Links -->
+      <ul class="navbar d-flex flex-column flex-lg-row align-items-center mb-3 mb-lg-0">
+        <li><a href="#aboutus"><i class="bi bi-info-circle"></i> About Us</a></li>
+        <li><a href="#media"><i class="bi bi-images"></i> Media/Gallery</a></li>
+        <li><a href="#services"><i class="bi bi-gear"></i> Services</a></li>
+        <li><a href="#news"><i class="bi bi-newspaper"></i> News</a></li>
+        <li><a href="#cafeteria"><i class="bi bi-cup-straw"></i> Cafeteria</a></li>
+        <li><a href="#eventsactivities"><i class="bi bi-calendar-event"></i> Events & Activities</a></li>
+        <li><a href="#contactus"><i class="bi bi-envelope"></i> Contact Us</a></li>
+      </ul>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons d-flex justify-content-center justify-content-lg-end gap-3">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="bi bi-facebook fs-5"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <i class="bi bi-instagram fs-5"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="bi bi-twitter fs-5"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+          <i class="bi bi-youtube fs-5"></i>
+        </a>
+        <a href="https://smile.amazon.com" target="_blank" aria-label="Amazon Smile">
+          <i class="fab fa-amazon fs-5 mt-2"></i>
+        </a>
+      </div>
+
+    </div>
   </div>
 </nav>
+
+
+
+

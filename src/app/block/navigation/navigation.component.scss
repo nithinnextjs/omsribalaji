@@ -15,8 +15,8 @@ $nav-bg: #f9f9f9;
   position: relative;
   background: url('../../../assets/images/head-bg-top.png') center center / cover no-repeat;
     background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-repeat: repeat;
+  background-size:contain;
   background-color: #fff; // fallback color
   width: 100%;
   min-height: 50%;
@@ -85,7 +85,7 @@ $nav-bg: #f9f9f9;
     flex-wrap: wrap;
 
     li {
-      margin: 8px 10px;
+      margin: 5px 5px;
 
       a {
         text-decoration: none;
@@ -104,6 +104,17 @@ $nav-bg: #f9f9f9;
 // Mobile navigation
 
 @media (max-width: 991px) {
+    .header-img-left {
+      width: 30%!important;
+    }
+
+    .header-img-center {
+      width: 40%!important;
+    }
+
+    .header-img-right {
+      display: none !important;
+    }
   .navbar-container {
     display: none;
     position: absolute;
@@ -122,6 +133,7 @@ $nav-bg: #f9f9f9;
       flex-direction: column;
       align-items: flex-start;
       padding: 1rem;
+      z-index: 99999;
     }
   }
 
@@ -164,4 +176,13 @@ $nav-bg: #f9f9f9;
         transform: translateY(0); /* slide into view */
     }
   }
+}
+
+.social-icons a {
+  color: #fcfcfc;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
 }
