@@ -177,6 +177,11 @@ $nav-bg: #f9f9f9;
     }
   }
 
+  .navbar li {
+        z-index: 999999;
+        position: relative;
+    }
+
   .navbar a, .navbar a:focus {
         display: flex;
         align-items: center;
@@ -187,7 +192,7 @@ $nav-bg: #f9f9f9;
         font-weight: 500;
         color: rgba(255, 255, 255, 0.7);
         white-space: nowrap;
-        z-index: 9999;
+        z-index: 999999;
         position: relative;
         text-transform: uppercase;
         transition: 0.3s;
