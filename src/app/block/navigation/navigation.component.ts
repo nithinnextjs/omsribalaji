@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -18,5 +18,24 @@ export class NavigationComponent implements OnInit {
 
   closeNav(): void {
     this.navVisible = false;
+  }
+
+  /**
+   * Closes nav on link click (only on mobile)
+   */
+  onNavLinkClick(): void {
+    if (window.innerWidth <= 991) {
+      this.closeNav();
+    }
+  }
+
+  /**
+   * Optional: auto close nav on window resize
+   */
+  @HostListener('window:resize', [])
+  onResize(): void {
+    if (window.innerWidth > 991) {
+      this.closeNav();
+    }
   }
 }

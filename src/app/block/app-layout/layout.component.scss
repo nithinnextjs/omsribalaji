@@ -61,3 +61,53 @@
     height: 250px;
   }
 }
+
+/* Container border around the entire tab section */
+#services .section{
+ background-color: #ffffff;
+}
+
+#services .nav-tabs {
+  margin-bottom: 20px;
+}
+
+/* Individual tab style */
+#services .nav-tabs .nav-link {
+  color: #feb900 !important;
+  background-color: #ffff !important;
+  border: 1px solid #feb900;
+  width: 100%; /* Fill the parent li width */
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+}
+
+/* Active tab */
+#services .nav-tabs .nav-link.active {
+  background-color: #feb900 !important;
+  color: #fff !important;
+}
+
+/* Optional hover effect */
+#services .nav-tabs .nav-link:hover {
+  background-color: #feb900 !important;
+  color: #fff !important;
+}
+
+/* Align tabs left and right */
+#services .nav-tabs .nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  justify-content: center;
+}
+
+/* Align first tab left, second tab right */
+#services .nav-tabs .nav-item:first-child {
+  justify-content: flex-start;
+}
+
+#services .nav-tabs .nav-item:last-child {
+  justify-content: flex-end;
+}

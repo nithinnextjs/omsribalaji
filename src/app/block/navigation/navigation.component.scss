@@ -169,13 +169,29 @@ $nav-bg: #f9f9f9;
 
   .navbar-container {
     position: sticky;
-    top: 90px; // adjust based on header height
+    top: 80px; // adjust based on header height
      &.show {
       display: block !important;
       position: absolute;
         transform: translateY(0); /* slide into view */
     }
   }
+
+  .navbar a, .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-family: var(--font-primary);
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.7);
+        white-space: nowrap;
+        z-index: 9999;
+        position: relative;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
 }
 
 .social-icons a {

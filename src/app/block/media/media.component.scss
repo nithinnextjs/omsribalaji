@@ -1,28 +1,103 @@
-section{
-    padding: 40px 0!important;
+section {
+  padding: 40px 0 !important;
 }
+
 .section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+// Tabs styling
+.nav-tabs {
+  justify-content: center;
+  border: none;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .nav-item {
+    padding: 0;
+    flex: 1 1 100%;
+    max-width: 100%;
+
+    @media (min-width: 576px) {
+      flex: 1 1 48%;
+    }
+
+    @media (min-width: 768px) {
+      flex: 1 1 30%;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 220px;
+    }
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
     text-align: center;
-    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 2px solid #feb900 !important;
+    border-radius: 6px;
+    background-color: #f5f6f7 !important;
+    color: #feb900 !important;
+    transition: all 0.3s ease;
+
+    &.active,
+    &.show,
+    &:hover {
+      background-color: #feb900 !important;
+      color: #fff !important;
+    }
+  }
 }
-.nav-tabs .nav-link {
-    border: none!important;
+
+  .smallicons {
+    padding-right: 15px;
+    font-size: 20px!important;
 }
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: #feb900!important;
-    background-color: none!important;
+
+// Optional margin for spacing (remove if not needed)
+.tab_section_gap {
+  margin-left: 100px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 }
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: #feb900!important;
-    background-color: #f5f6f7!important;
+
+ @media (max-width: 768px) {
+    .nav-tabs .nav-item {
+        padding: 0;
+        flex: 1 1 100%;
+        max-width: 27%;
+    }
+
+      .smallicons {
+    padding-right: 5px;
+    font-size: 10px!important;
 }
-.tab_section_gap{
-    margin-left:100px;
 }
-.image_section img{
+
+// Gallery image styles
+.image_section {
+  padding: 10px;
+
+  img {
     margin-bottom: 10px;
-}
-.image_section h5{
-    text-align: center!important;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  h5 {
+    text-align: center;
     font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+  }
 }
