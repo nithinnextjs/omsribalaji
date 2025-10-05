@@ -20,7 +20,16 @@
     color: #feb900!important;
     background-color: #f5f6f7!important;
 }
+.video-container {
+    height: 500px; /* Adjust this as per your requirement */
+    width: 100%; /* The width can also be adjusted as needed */
+}
 
+.responsive-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /*** Facts ***/
 .facts {
@@ -32,7 +41,7 @@
       overflow-x: hidden;
       padding: 0;
       margin-top: 0px;
-      max-height: 300px;
+      max-height: 350px;
   }
 
   #services h4{
@@ -42,8 +51,8 @@
 
 .carousel-item {
   background-size: cover;
-  background-position: center;
-  height: 500px; // default desktop height
+  // background-position: center;
+  height: 600px; // default desktop height
   width: 100%;
   transition: background-image 0.5s ease-in-out;
 }
@@ -62,7 +71,7 @@
 // Mobile
 @media (max-width: 576px) {
   .carousel-item {
-    height: 250px;
+    height: 350px;
   }
 }
 

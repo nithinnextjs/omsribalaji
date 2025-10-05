@@ -117,7 +117,7 @@ $nav-bg: #f9f9f9;
     }
   .navbar-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 100%;  // appears right below header
     left: 0;
     width: 100%;
@@ -134,6 +134,7 @@ $nav-bg: #f9f9f9;
       align-items: flex-start;
       padding: 1rem;
       z-index: 99999;
+      position: sticky;
     }
   }
 
@@ -141,7 +142,6 @@ $nav-bg: #f9f9f9;
     position: relative; // header not sticky on mobile
   }
 }
-
 
 // White toggle icon
 .mobile-nav-toggle {

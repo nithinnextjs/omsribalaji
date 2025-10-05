@@ -5,12 +5,12 @@
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div class="carousel-item active">
+      <div class="carousel-item video-container active">
         <!-- <video [muted]="true" class="w-100" autoplay playsinline loop id="myVideo">
           <source [src]="'assets/images/Om_Sri_Sai_Balaji_Temple.mp4'" type="video/mp4">
       </video> -->
       <video  id="myVideo"  #video (canplay)="video.play()" [muted]="false" autoplay loop
-      (loadedmetadata)="video.muted = true" class="w-100">
+      (loadedmetadata)="video.muted = true" class="w-100 responsive-video">
         <source src="assets/images/Om_Sri_Sai_Balaji_Temple.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
@@ -49,12 +49,12 @@
 
         <ul class="nav nav-tabs d-flex justify-content-center align-items-center gap-3 flex-wrap" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" data-bs-toggle="tab" href="#tab-42" role="tab" aria-selected="true" tabindex="0">
+        <a class="nav-link active" data-bs-toggle="tab" href="#tab-211" role="tab" aria-selected="true" tabindex="0">
           <h4 class="mb-0">Inside Temple <i class="fa-regular fa-clock smallicons"></i></h4>
         </a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" data-bs-toggle="tab" href="#tab-43" role="tab" aria-selected="false" tabindex="-1">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab-222" role="tab" aria-selected="false" tabindex="-1">
           <h4 class="mb-0">Outside Temple <i class="bi bi-cup-hot smallicons"></i></h4>
         </a>
       </li>
