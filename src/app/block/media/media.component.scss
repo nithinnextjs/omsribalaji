@@ -39,17 +39,16 @@ section {
     font-weight: 600;
     font-size: 14px;
     padding: 8px 12px;
-    border: 2px solid #feb900 !important;
-    border-radius: 6px;
-    background-color: #f5f6f7 !important;
-    color: #feb900 !important;
+    color: #121212 !important;
     transition: all 0.3s ease;
 
     &.active,
     &.show,
     &:hover {
-      background-color: #feb900 !important;
-      color: #fff !important;
+      color: #feb900 !important;
+      border-bottom: 3px solid #feb900 !important;
+       border: none;
+       background: none;
     }
   }
 }
@@ -57,6 +56,12 @@ section {
   .smallicons {
     padding-right: 15px;
     font-size: 20px!important;
+}
+
+.tab-content{
+   border: 2px solid #ffda75 !important;
+   padding: 10px;
+   border-radius: 6px;
 }
 
 // Optional margin for spacing (remove if not needed)

@@ -74,44 +74,114 @@
 #services .nav-tabs {
   margin-bottom: 20px;
 }
+  .nav{
+    border-bottom: none !important;
+  }
 
 /* Individual tab style */
-#services .nav-tabs .nav-link {
+#services .nav-tabs {
+ .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 25px;
+    background-color: none;
+    color: #050505 !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-width: 110px;
+    text-align: center;
+
+    h4 {
+      margin: 0;
+      font-size: 1.25rem;
+      white-space: nowrap; // Prevent text wrap on desktop
+    }
+
+    &:hover,
+    &.active,
+    &.show {
+       color: #feb900 !important;
+      border-bottom: 3px solid #feb900 !important;
+       border: none;
+       background: none;
+    }
+  }
+}
+
+// /* Active tab */
+// #services .nav-tabs .nav-link.active {
+//   background-color: #feb900 !important;
+//   color: #fff !important;
+// }
+
+// /* Optional hover effect */
+// #services .nav-tabs .nav-link:hover {
+//   background-color: #feb900 !important;
+//   color: #fff !important;
+// }
+
+// /* Align tabs left and right */
+// #services .nav-tabs .nav-item {
+//   display: flex;
+//   align-items: center;
+//   margin: 0px;
+//   justify-content: center;
+// }
+
+// /* Align first tab left, second tab right */
+// #services .nav-tabs .nav-item:first-child {
+//   justify-content: flex-start;
+// }
+
+// #services .nav-tabs .nav-item:last-child {
+//   justify-content: flex-end;
+// }
+
+
+.tab-content{
+   border: 2px solid #ffda75 !important;
+   padding: 20px;
+   border-radius: 6px;
+}
+
+li.filter-active {
   color: #feb900 !important;
-  background-color: #ffff !important;
-  border: 1px solid #feb900;
-  width: 100%; /* Fill the parent li width */
-  text-align: center;
-  font-weight: 600;
-  padding: 10px 15px;
-  transition: 0.3s ease;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #feb900 !important;
+  background: none;
+  border: none;
 }
 
-/* Active tab */
-#services .nav-tabs .nav-link.active {
-  background-color: #feb900 !important;
-  color: #fff !important;
-}
 
-/* Optional hover effect */
-#services .nav-tabs .nav-link:hover {
-  background-color: #feb900 !important;
-  color: #fff !important;
-}
+.portfolio-flters{
+  .li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 25px;
+    background-color: none;
+    color: #050505 !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-width: 110px;
+    text-align: center;
 
-/* Align tabs left and right */
-#services .nav-tabs .nav-item {
-  display: flex;
-  align-items: center;
-  margin: 0px;
-  justify-content: center;
-}
+    h4 {
+      margin: 0;
+      font-size: 1.25rem;
+      white-space: nowrap; // Prevent text wrap on desktop
+    }
 
-/* Align first tab left, second tab right */
-#services .nav-tabs .nav-item:first-child {
-  justify-content: flex-start;
-}
-
-#services .nav-tabs .nav-item:last-child {
-  justify-content: flex-end;
+    &:hover,
+    &.active,
+    &.show {
+       color: #feb900 !important;
+      border-bottom: 3px solid #feb900 !important;
+       border: none;
+       background: none;
+    }
+  }
 }
